@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Heart Disease Prediction
+		</title>
+		<style>
+			
+		</style>
+	</head>
+	<body style="background-color: lightyellow;">
+		<h1 style="text-align: center;">Heart Disease Prediction</h1>
+		<form style="color: blue;" action="predict" method="post">
+			{% csrf_token %}
+			Age:<br>
+			<input type="number" name="age"><br><br>
+			Sex:<br>
+			<input type="radio" name="sex" value="1">Male<br>
+			<input type="radio" name="sex" value="0">Female<br>
+			<br>
+			Chest Pain Type:<br>
+			<input type="number" name="cpt"><br><br>
+			Blood Pressure:<br>
+			<input type="number" name="bp"><br><br>
+			Cholesterol:<br>
+			<input type="number" name="cholesterol"><br><br>
+			FBS over 120:<br>
+			<input type="number" name="fbs"><br><br>
+			EKG results:<br>
+			<input type="number" name="ekg"><br><br>
+			Max HR:<br>
+			<input type="number" name="max_hr"><br><br>
+			Exercise Angina:<br>
+			<input type="radio" name="EA" value="0">0<br>
+			<input type="radio" name="EA" value="1">1<br>
+			ST Depression:<br>
+			<input type="number" name="st"><br><br>
+			Slope of ST:<br>
+			<input type="radio" name="slopeofst" value="1">1<br>
+			<input type="radio" name="slopeofst" value="2">2<br>
+			Number of Vessels Fluro:<br>
+			<input type="number" name="nvf"><br><br>
+			Thallium:<br>
+			<input type="number" name="thallium"><br><br>
+			<input type="Submit">
+
+		</form>
+	</body>
+</html>
